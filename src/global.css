@@ -1,0 +1,22 @@
+:root{
+    --light-blue: #54BAB1;
+    --dark-blue: #31425A;
+    --gray: #808080;
+    --light-gray: rgba(49,66,90,0.5);
+    --white: #FFF;
+    --black: #000;
+    --yellow: #FFD600;
+    --green: #42FF00;
+    --red: #FF0000;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+
