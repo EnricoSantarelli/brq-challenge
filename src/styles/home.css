@@ -84,6 +84,7 @@ div > img {
 }
 
 section > h1 {
+  text-align: center;
   font-size: 0.6rem;
 }
 
@@ -140,14 +141,14 @@ li > a {
 }
 
 a > i {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: var(--white);
   font-weight: bold;
   transition: ease-in-out 0.2s;
 }
 
 a > span {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: var(--white);
   font-weight: bold;
   transition: ease-in-out 0.2s;

@@ -1,5 +1,5 @@
 const mainContent = document.getElementsByTagName("main");
-const nav = document.getElementsByTagName("nav");
+const modelSearcher = document.getElementsByTagName("input");
 
 const advertisements = [
   {
@@ -39,7 +39,7 @@ const advertisements = [
   },
   {
     name: "Fiat Argo 2015",
-    price: 115.60,
+    price: 115.6,
     owner: "Leandro Prosadelli",
     distance: 0.1,
     photoSrc: "../../assets/argo.png",
@@ -47,33 +47,47 @@ const advertisements = [
 ];
 
 advertisements.map(
-    (element) => mainContent[0].innerHTML += `
-    <section>
-        <div>
-            <img src="${element.photoSrc}" alt="Foto do carro" />
-        </div>
-        <h1>${element.name}</h1>
-        <h2>
-            R$ ${element.price.toFixed(2)}/
-            <p>dia</p>
-        </h2>
-        <div class="infos">
-            <div>
-                <i class="ph ph-user"></i>
-                <p>${element.owner}</p>
-            </div>
-            <div>
-                <i class="ph ph-navigation-arrow"></i>
-                <p>À ${element.distance}Km de você</p>
-            </div>
-        </div>
-    </section>
-    `
+  (element) => (mainContent[0].innerHTML += getCarElement(element))
 );
 
+modelSearcher[0].addEventListener("input", () => {
+  if (modelSearcher[0].value == "") {
+    mainContent[0].innerHTML = "";
+    advertisements.map(
+      (element) => (mainContent[0].innerHTML += getCarElement(element))
+    );
+  } else {
+    let filteredAdvertisements = advertisements.filter((element) =>
+      element.name.toLowerCase().startsWith(modelSearcher[0].value.toLowerCase())
+    );
+    mainContent[0].innerHTML = "";
+    filteredAdvertisements.map(
+      (element) => (mainContent[0].innerHTML += getCarElement(element))
+    );
+  }
+});
 
-
-
-
-
-    
+function getCarElement(element) {
+  return `
+  <section>
+      <div>
+          <img src="${element.photoSrc}" alt="Foto do carro" />
+      </div>
+      <h1>${element.name}</h1>
+      <h2>
+          R$ ${element.price.toFixed(2)}/
+          <p>dia</p>
+      </h2>
+      <div class="infos">
+          <div>
+              <i class="ph ph-user"></i>
+              <p>${element.owner}</p>
+          </div>
+          <div>
+              <i class="ph ph-navigation-arrow"></i>
+              <p>À ${element.distance}Km de você</p>
+          </div>
+      </div>
+  </section>
+  `;
+}
