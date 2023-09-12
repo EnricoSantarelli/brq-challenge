@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Easy Carros - Anunciar</title>
+    <link rel="stylesheet" href="../styles/adverts.css" />
+    <link rel="stylesheet" href="../global.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <header>
+      <img src="../../assets/logo.png" alt="Logo Easy Carros">
+      <a href="">
+        <i class="ph ph-user-circle"></i>
+      </a>
+    </header>
+    <main>
+      <form action="login.html">
+          <input type="text" placeholder="Modelo do veículo" required />
+          <input type="number" placeholder="Ano do veículo" required />
+          <input
+            type="number"
+            placeholder="Quilometragem do veículo"
+            required
+          />
+          <input
+            type="text"
+            onfocus="(this.type='date')"
+            placeholder="Confirme seu email"
+            required
+          />
+          <input type="number" placeholder="Preço diário do aluguel" required />
+          <input type="text" placeholder="Localização do veículo" required />
+          <div class="first">
+            <i class="ph ph-file-arrow-up"></i>
+            <p>Arraste e solte imagens do veículo</p>
+          </div>
+          <div>
+            <i class="ph ph-file-arrow-up"></i>
+            <p>Arraste e solte a documentação do veículo</p>
+          </div>
+        <input class="button" type="submit" value="Anunciar" />
+      </form>
+    </main>
+    <footer>
+      <nav>
+        <ul>
+          <li>
+            <a href="home.html">
+              <i class="ph ph-house house"></i>
+              <span class="house">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="ph ph-tag tag"></i>
+              <span class="tag">Anunciar</span>
+            </a>
+          </li>
+          <li>
+            <a href="more.html">
+              <i class="ph ph-list list"></i>
+              <span class="list">Mais</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
