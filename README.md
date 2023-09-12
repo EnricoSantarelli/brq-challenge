@@ -1,6 +1,6 @@
 # Easy Carros - FIAP Project
 
-![Easy Cars Logo]([https://link_to_logo_image.png](https://www.google.com/url?sa=i&url=https%3A%2F%2Fnew.easycarros.com%2Fcompra-novos-veiculos%2F&psig=AOvVaw2ZQ4uONlpIXXmpmk60A7BK&ust=1694642276291000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCOi2mMmIpoEDFQAAAAAdAAAAABAE))
+![Easy Cars Logo]([[https://link_to_logo_image.png](https://www.google.com/url?sa=i&url=https%3A%2F%2Fnew.easycarros.com%2Fcompra-novos-veiculos%2F&psig=AOvVaw2ZQ4uONlpIXXmpmk60A7BK&ust=1694642276291000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCOi2mMmIpoEDFQAAAAAdAAAAABAE)](https://www.google.com/url?sa=i&url=https%3A%2F%2Frms188a.easycarros.com%2Fbox%2F&psig=AOvVaw2ZQ4uONlpIXXmpmk60A7BK&ust=1694642276291000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCOi2mMmIpoEDFQAAAAAdAAAAABAJ))
 
 ## Overview
 
