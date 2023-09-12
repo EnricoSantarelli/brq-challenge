@@ -12,6 +12,13 @@ body > footer {
   width: 100%;
   background-color: var(--light-blue);
   padding: 1rem;
+  height: 4rem;
+}
+
+body::after {
+  content: "";
+  display: block;
+  height: 4rem;
 }
 
 body > main {
@@ -59,8 +66,9 @@ a > .ph-user-circle {
 }
 
 main > section {
-  width: 45%;
-  height: 10rem;
+  width: 42%;
+  max-width: 12rem;
+  height: 11rem;
   border: solid 0.15rem var(--gray);
   border-radius: 1rem;
   background-color: var(--light-blue);
@@ -72,10 +80,14 @@ main > section {
   gap: 0.2rem;
 }
 
+main > div {
+  height: 5rem;
+}
+
 section > div {
-    background-color: var(--white);
-    border-radius: 1rem;
-    padding: 1rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+  padding: 1rem;
 }
 
 div > img {
@@ -84,6 +96,7 @@ div > img {
 }
 
 section > h1 {
+  max-lines: 1;
   text-align: center;
   font-size: 0.6rem;
 }
@@ -100,17 +113,18 @@ h2 > p {
 }
 
 section > .infos {
-    display: flex;
-    font-size: 0.5rem;
-    background-color: transparent;
-    padding: 0;
-    gap: 0.4rem;
-    margin-top: auto;
-  }
+  display: flex;
+  font-size: 0.6rem;
+  background-color: transparent;
+  padding: 0;
+  gap: 0.4rem;
+  margin-top: auto;
+}
 
 .infos > div {
-    display: flex;
-    gap: 0.1rem;
+  display: flex;
+  gap: 0.1rem;
+  align-items: center;
 }
 
 footer > nav {
@@ -126,8 +140,6 @@ nav > ul {
 ul > li {
   display: inline-block;
 }
-
-
 
 ul > .house {
   color: var(--dark-blue);
@@ -154,7 +166,7 @@ a > span {
   transition: ease-in-out 0.2s;
 }
 
-a > .house{
+a > .house {
   color: var(--dark-blue);
 }
 
@@ -174,4 +186,19 @@ ul > li:hover span {
 
 ul > li:hover i {
   color: var(--dark-blue);
+}
+
+@media (min-width: 430px) {
+  section > h1 {
+    font-size: 1rem;
+  }
+
+  section > h2 {
+    font-size: 1rem;
+  }
+
+  section > .infos {
+    font-size: 0.8rem;
+  }
+
 }

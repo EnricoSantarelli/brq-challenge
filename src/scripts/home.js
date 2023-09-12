@@ -17,7 +17,7 @@ const advertisements = [
     photoSrc: "../../assets/hb20.png",
   },
   {
-    name: "Volkswagen Voyage 2014",
+    name: "Voyage 2014",
     price: 190,
     owner: "Enrico Santarelli",
     distance: 3.4,
@@ -33,7 +33,7 @@ const advertisements = [
   {
     name: "Toyota Athios 2018",
     price: 142,
-    owner: "José Luiz Alberto",
+    owner: "José Alberto",
     distance: 10.2,
     photoSrc: "../../assets/athios.png",
   },
@@ -44,6 +44,49 @@ const advertisements = [
     distance: 0.1,
     photoSrc: "../../assets/argo.png",
   },
+  {
+    name: "Fiat Argo 2022",
+    price: 120,
+    owner: "Sandro Marques",
+    distance: 0.5,
+    photoSrc: "../../assets/argo.png",
+  },
+  {
+    name: "Hyundai Hb20 2016",
+    price: 178.9,
+    owner: "Roberta Menezes",
+    distance: 0.2,
+    photoSrc: "../../assets/hb20.png",
+  },
+  {
+    name: " Voyage 2014",
+    price: 190,
+    owner: "Enrico Santarelli",
+    distance: 3.4,
+    photoSrc: "../../assets/voyage.png",
+  },
+  {
+    name: "Fiat Mobi 2023",
+    price: 210,
+    owner: "Caroline Pagnota",
+    distance: 0.3,
+    photoSrc: "../../assets/mobi.png",
+  },
+  {
+    name: "Toyota Athios 2018",
+    price: 142,
+    owner: "José Alberto",
+    distance: 10.2,
+    photoSrc: "../../assets/athios.png",
+  },
+  {
+    name: "Fiat Argo 2015",
+    price: 115.6,
+    owner: "Leandro Prosadelli",
+    distance: 0.1,
+    photoSrc: "../../assets/argo.png",
+  },
+  
 ];
 
 advertisements.map(
@@ -85,7 +128,7 @@ function getCarElement(element) {
           </div>
           <div>
               <i class="ph ph-navigation-arrow"></i>
-              <p>À ${element.distance}Km de você</p>
+              <p>${element.distance}Km</p>
           </div>
       </div>
   </section>
